@@ -8,7 +8,7 @@ import { Logo } from './logo'
 const siteConfig = {
   logo: Logo,
   seo: {
-    title: 'Play Sonoplastia',
+    title: 'Player Sonoplastia',
     
     description: 'Para maior agilidade e organização',
   } as NextSeoProps,

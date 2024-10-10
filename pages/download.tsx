@@ -20,7 +20,7 @@ import {
     const plans = [
       {
         id: 'oss',
-        title: 'YouTube Play',
+        title: 'YouTube Player',
         description: 'Uma interface fácil de usar, basta colar a URL.',
         price: 'Grátis',
         isRecommended: true,
@@ -39,7 +39,7 @@ import {
       },
       {
         id: 'bootstrap',
-        title: 'Play Video',
+        title: 'Player Video',
         description: 'Para facilitar a reprodução em duas telas.',
         price: 'Grátis',
         isRecommended: true,
@@ -59,7 +59,7 @@ import {
   
     return (
       <Box p={8} textAlign="center">
-        <NextSeo title="::Sonoplastia-Play::" />
+        <NextSeo title="::Sonoplastia-Player::" />
         {/* <BackgroundGradient height="100%" /> */}
         <Box zIndex="2" pos="relative">
           <Heading mb={4} mt={8}>Faça o Download</Heading>

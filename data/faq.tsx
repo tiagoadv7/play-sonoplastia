@@ -5,7 +5,7 @@ const faq = {
   // description: '',
   items: [
     {
-      q: 'Play Video',
+      q: 'Player Video',
       a: (
         <>
           Procure arquivos localmente, ou arraste para a tela do app.
@@ -13,7 +13,7 @@ const faq = {
       ),
     },
     {
-      q: 'YouTube Play',
+      q: 'YouTube Player',
       a: "Copie URL do youtube e cole na barra de pesquisa.",
     },
     {
@@ -22,7 +22,7 @@ const faq = {
     },
     {
       q: 'Com apenas um botão você pode execultar',
-      a: 'Só colar a URL e apertar o botão Enter, para executar o Play.',
+      a: 'Só colar a URL e apertar o botão Enter, para executar o Player.',
     },
   ],
 }

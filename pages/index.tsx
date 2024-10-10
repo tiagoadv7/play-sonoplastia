@@ -279,7 +279,7 @@ const HighlightsSection = () => {
         Executar diretamente do programa, bastando apenas colar a URL do Youtube, para que seja executado dentro do programa.        </Text>
       </HighlightsItem>
       <HighlightsTestimonialItem
-        name="Play"
+        name="Player"
         description="Sonoplastia"
         avatar="/static/logo/logo1.png"
         gradient={["pink.200", "purple.500"]}
@@ -384,14 +384,14 @@ const FeaturesSection = () => {
           variant: "inline",
         },
         {
-          title: "YouTube Play.",
+          title: "YouTube Player.",
           icon: FiCode,
           description:
             "Versão 1.4.24",
           variant: "inline",
         },
         {
-          title: "Video Play.",
+          title: "Video Player.",
           icon: FiCode,
           description:
             "Versão 1.3.24",
