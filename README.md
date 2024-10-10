@@ -6,21 +6,6 @@
 - Contentlayer
 - Typescript
 
-## Features
-
-- Feature blocks
-- Testimonials
-- Pricing tables
-- Log in and Sign up pages
-- FAQ
-
-## In progress
-
-- [ ] Supabase Auth
-- [ ] Waitlist sign-up with GetRevue
-- [ ] Blog (Contentlayer)
-- [ ] Docs
-
 ## Getting Started
 
 First, clone this repo and run `npm i`
