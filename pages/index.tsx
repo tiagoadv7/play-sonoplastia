@@ -246,7 +246,7 @@ const HighlightsSection = () => {
       <HighlightsItem colSpan={[1, null, 2]} title="Mais produtividade para sua Igreja!">
         <VStack alignItems="flex-start" spacing="6">
           <Text color="muted" fontSize="xl">
-            Para o Player <Em>de video Youtube</Em>.
+            Para o <Em>Play de video Youtube</Em>.
             O Aplicativo só precisa está conectado a rede para que a função de URL 
             funcione de foma rapida e eficiente através da Web
           </Text>
@@ -279,7 +279,7 @@ const HighlightsSection = () => {
         Executar diretamente do programa, bastando apenas colar a URL do Youtube, para que seja executado dentro do programa.        </Text>
       </HighlightsItem>
       <HighlightsTestimonialItem
-        name="Players"
+        name="Play"
         description="Sonoplastia"
         avatar="/static/logo/logo1.png"
         gradient={["pink.200", "purple.500"]}
@@ -384,14 +384,14 @@ const FeaturesSection = () => {
           variant: "inline",
         },
         {
-          title: "YouTube Player.",
+          title: "YouTube Play.",
           icon: FiCode,
           description:
             "Versão 1.4.24",
           variant: "inline",
         },
         {
-          title: "Video Player.",
+          title: "Video Play.",
           icon: FiCode,
           description:
             "Versão 1.3.24",

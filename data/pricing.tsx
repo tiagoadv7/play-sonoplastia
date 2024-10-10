@@ -7,7 +7,7 @@ export default {
   plans: [
     {
       id: 'oss',
-      title: 'YouTube Player',
+      title: 'YouTube Play',
       description: 'Uma interfaçe facil de usar e só colar a URL.',
       price: 'Grátis',
       isRecommended: true,
@@ -35,7 +35,7 @@ export default {
     },
     {
       id: 'bootstrap',
-      title: 'Player Video',
+      title: 'Play Video',
       description: 'Para facilitar a Reprodução em 2 Tela.',
       price: 'Grátis',
       isRecommended: true,
