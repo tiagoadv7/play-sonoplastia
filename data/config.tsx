@@ -19,14 +19,17 @@ const siteConfig = {
       {
         id: 'features',
         label: 'Atualizações',
+        href: '/#features',
       },
       {
         id: 'pricing',
         label: 'Download',
+        href: '/#download',
       },
       {
         id: 'faq',
         label: 'Como Usar',
+        href: '/#faq',
       },
       // {
       //   label: '',

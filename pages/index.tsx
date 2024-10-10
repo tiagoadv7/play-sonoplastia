@@ -49,13 +49,13 @@ import { BackgroundGradient } from "components/gradients/background-gradient";
 import { Faq } from "components/faq";
 import { Pricing } from "components/pricing/pricing";
 import { ButtonLink } from "components/button-link/button-link";
+import DownloadPage, { Download } from "pages/download";
 import { Testimonial, Testimonials } from "components/testimonials";
 
 import faq from "data/faq";
 import testimonials from "data/testimonials";
 import pricing from "data/pricing";
-// import Download from "components/download/download";
-// import downloadData from "data/download";
+import download from "pages/download";
 
 import {
   Highlights,
@@ -67,7 +67,7 @@ const Home: NextPage = () => {
   return (
     <Box>
       <SEO
-        title="Players Sonoplastia"
+        title="Play Sonoplastia"
         description="Para facilitar o seu cotidiano"
       />
       <Box>
@@ -79,7 +79,7 @@ const Home: NextPage = () => {
 
         <TestimonialsSection />
 
-        <PricingSection />
+        <DownloadSection />
 
         <FaqSection />
       </Box>
@@ -118,7 +118,7 @@ const HeroSection: React.FC = () => {
               </HStack>
 
               <ButtonGroup spacing={4} alignItems="center">
-                <ButtonLink colorScheme="primary" size="lg" href="/#pricing">
+                <ButtonLink colorScheme="primary" size="lg" href="/#download">
                   Download
                 </ButtonLink>
                 <ButtonLink
@@ -239,7 +239,7 @@ const HeroSection: React.FC = () => {
 };
 
 const HighlightsSection = () => {
-  const { value, onCopy, hasCopied } = useClipboard("yarn add @saas-ui/react");
+  // const { value, onCopy, hasCopied } = useClipboard("yarn add @saas-ui/react");
 
   return (
     <Highlights>
@@ -459,13 +459,11 @@ const TestimonialsSection = () => {
   );
 };
 
-const PricingSection = () => {
+const DownloadSection = () => {
   return (
-    <Pricing {...pricing}>
-      <Text p="8" textAlign="center" color="muted">
-        Para manter a organização dos Cultos
-      </Text>
-    </Pricing>
+    <Box id="download">
+      <DownloadPage {...download} />
+    </Box>
   );
 };
 

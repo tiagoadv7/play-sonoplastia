@@ -3,7 +3,7 @@ import { HStack, Text } from '@chakra-ui/react'
 export default {
   title: 'Faça o Download',
   description:
-    'Começe a usar.',
+    'Comece a usar os aplicativos.',
   plans: [
     {
       id: 'oss',
