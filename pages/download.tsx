@@ -56,7 +56,7 @@ import {
   
     return (
       <Box p={8} textAlign="center">
-        <NextSeo title="Download" />
+        <NextSeo title="::Sonoplastia-Play::" />
         <BackgroundGradient height="100%" />
         <Box zIndex="2" pos="relative">
           <Heading mb={4} mt={8}>Faça o Download</Heading>
