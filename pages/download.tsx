@@ -18,7 +18,7 @@ import {
     const plans = [
       {
         id: 'oss',
-        title: 'YouTube Player',
+        title: 'YouTube Play',
         description: 'Uma interface fácil de usar, basta colar a URL.',
         price: 'Grátis',
         isRecommended: true,
@@ -36,7 +36,7 @@ import {
       },
       {
         id: 'bootstrap',
-        title: 'Player Video',
+        title: 'Play Video',
         description: 'Para facilitar a reprodução em duas telas.',
         price: 'Grátis',
         isRecommended: true,

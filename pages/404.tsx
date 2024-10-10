@@ -13,7 +13,7 @@ const NotFound = () => {
   return (
     <>
       <Head>
-        <title>404 | Player Sonoplastia</title>
+        <title>404 | Play Sonoplastia</title>
       </Head>
       <Erro
       id='404'
