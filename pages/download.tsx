@@ -1,10 +1,12 @@
 import {
     Box,
-    HStack,
-    VStack,
     Heading,
-    Text,
+    HStack,
+    Icon,
     SimpleGrid,
+    StackProps,
+    Text,
+    VStack,
   } from '@chakra-ui/react';
   import { NextSeo } from 'next-seo';
   import { useRouter } from 'next/router';
@@ -27,7 +29,8 @@ import {
           { title: 'Fácil' },
           { title: 'Prático' },
           { title: 'Leve' },
-          { title: 'Baixe já...', iconColor: 'green.500' },
+          {  title: 'Baixe já...',
+            iconColor: 'green.500', },
         ],
         action: {
           href: 'https://download943.mediafire.com/vksyvz8iptlg62jYT3gNoUmmwWgpqLZFN0YGDMV3-F4hcoGmYFbEA1Q-hbLmQ7jh7ZMiiL2iwjaZo6IcRkMC83iiOhhGxW_7I7Fxin2Oa12oaPBfVUCX290scuPjymcV_UMT6JX6o3qb0u-Qtu4sk_5GzpnoCPJvTY0lcw0g6Ei0Xg/d3v8iy7tux95tlu/Youtube+Player-Setup-1.4.24.exe',
@@ -57,7 +60,7 @@ import {
     return (
       <Box p={8} textAlign="center">
         <NextSeo title="::Sonoplastia-Play::" />
-        <BackgroundGradient height="100%" />
+        {/* <BackgroundGradient height="100%" /> */}
         <Box zIndex="2" pos="relative">
           <Heading mb={4} mt={8}>Faça o Download</Heading>
           <Text mt={4}>Comece a usar os aplicativos.</Text>
