@@ -47,13 +47,13 @@ import {
 import { Features } from "components/features";
 import { BackgroundGradient } from "components/gradients/background-gradient";
 import { Faq } from "components/faq";
-import { Pricing } from "components/pricing/pricing";
+// import { Pricing } from "components/pricing/pricing";
 import { ButtonLink } from "components/button-link/button-link";
-import DownloadPage, { Download } from "pages/download";
-import { Testimonial, Testimonials } from "components/testimonials";
+import DownloadPage from './download'; 
+// import { Testimonial, Testimonials } from "components/testimonials";
 
 import faq from "data/faq";
-import testimonials from "data/testimonials";
+// import testimonials from "data/testimonials";
 import pricing from "data/pricing";
 import download from "pages/download";
 
@@ -77,7 +77,7 @@ const Home: NextPage = () => {
 
         <FeaturesSection />
 
-        <TestimonialsSection />
+        {/* <TestimonialsSection /> */}
 
         <DownloadSection />
 
@@ -428,36 +428,36 @@ const FeaturesSection = () => {
   );
 };
 
-const TestimonialsSection = () => {
-  const columns = React.useMemo(() => {
-    return testimonials.items.reduce<Array<typeof testimonials.items>>(
-      (columns, t, i) => {
-        columns[i % 3].push(t);
+// const TestimonialsSection = () => {
+//   const columns = React.useMemo(() => {
+//     return testimonials.items.reduce<Array<typeof testimonials.items>>(
+//       (columns, t, i) => {
+//         columns[i % 3].push(t);
 
-        return columns;
-      },
-      [[], [], []]
-    );
-  }, []);
+//         return columns;
+//       },
+//       [[], [], []]
+//     );
+//   }, []);
 
-  return (
-    <Testimonials
-      title={testimonials.title}
-      columns={[1, 2, 3]}
-      innerWidth="container.xl"
-    >
-      <>
-        {columns.map((column, i) => (
-          <Stack key={i} spacing="8">
-            {column.map((t, i) => (
-              <Testimonial key={i} {...t} />
-            ))}
-          </Stack>
-        ))}
-      </>
-    </Testimonials>
-  );
-};
+//   return (
+//     <Testimonials
+//       title={testimonials.title}
+//       columns={[1, 2, 3]}
+//       innerWidth="container.xl"
+//     >
+//       <>
+//         {columns.map((column, i) => (
+//           <Stack key={i} spacing="8">
+//             {column.map((t, i) => (
+//               <Testimonial key={i} {...t.message} />
+//             ))}
+//           </Stack>
+//         ))}
+//       </>
+//     </Testimonials>
+//   );
+// };
 
 const DownloadSection = () => {
   return (
