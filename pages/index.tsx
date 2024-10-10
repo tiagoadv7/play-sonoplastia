@@ -471,15 +471,7 @@ const FaqSection = () => {
   return <Faq {...faq} />;
 };
 
-// const DownloadSection = () => {
-//   return (
-//     <Download {...downloadData}>
-//       <Text p="8" textAlign="center" color="muted">
-//         Para manter a organização dos Cultos
-//       </Text>
-//     </Download>
-//   );
-// };
+
 
 
 export default Home;
