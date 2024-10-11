@@ -2,8 +2,18 @@ import React from 'react';
 import { NextSeo, NextSeoProps } from 'next-seo';
 import siteConfig from 'data/config';
 
+// Definição do tipo Twitter, adaptado conforme necessário
+type Twitter = {
+  cardType: string;
+  site?: string;
+  description?: string;
+  images: string[];
+};
+
+// Extensão do NextSeoProps para incluir o título
 export interface SEOProps extends NextSeoProps {
   image?: string; // Adicionando suporte a imagens customizadas
+  twitter?: Twitter; // Adiciona o tipo Twitter
 }
 
 export const SEO = ({ title, description, image, ...props }: SEOProps) => {
@@ -11,7 +21,7 @@ export const SEO = ({ title, description, image, ...props }: SEOProps) => {
   const ogImage =
     image ||
     siteConfig.seo?.openGraph?.images?.[0]?.url ||
-    'default-image-url'; // Replace 'default-image-url' with your actual default image URL
+    'default-image-url';
 
   return (
     <NextSeo
@@ -29,16 +39,14 @@ export const SEO = ({ title, description, image, ...props }: SEOProps) => {
             alt: title || siteConfig.seo.openGraph?.images?.[0]?.alt || 'Default image description', // Usa o alt padrão se nenhum for passado
           },
         ],
-        url: props.canonical, // Include canonical URL if provided
-      // }}
-      // twitter={{
-      //   cardType: 'summary_large_image',
-      //   site: siteConfig.seo?.twitter?.site || '@defaultTwitterHandle', // Adiciona o handle do Twitter se houver
-      //   title: title || (siteConfig.seo?.title as string),
-      //   description: description || siteConfig.seo.description,
-      //   images: [ogImage], // Imagem para Twitter Cards
       }}
-      titleTemplate={siteConfig.seo?.titleTemplate || '%s | ::Player::'}
+      twitter={{
+        cardType: 'summary_large_image',
+        site: siteConfig.seo.twitter?.site, // Adiciona o handle do Twitter se houver
+        description: description || siteConfig.seo.description,
+        images: [ogImage], // Imagem para Twitter Cards
+      }} 
+      titleTemplate={siteConfig.seo.titleTemplate || '%s | ::Player::'}
       {...props} // Espalha as outras propriedades que podem ser passadas
     />
   );
