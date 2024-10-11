@@ -18,7 +18,7 @@ const siteConfig = {
       description: 'Para maior agilidade e organização',
       images: [
         {
-          url: `${process.env.WEBSITE_URL}/images/seo/logo.png`,
+          url: `https://github.com/tiagoadv7/play-sonoplastia/blob/main/public/static/images/seo/logo.png`,
           width: 1200,
           height: 630,
           alt: 'Player Sonoplastia - Agilidade e Organização',
