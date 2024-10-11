@@ -13,6 +13,7 @@ import {
   import { FiCheck } from 'react-icons/fi';
   import { BackgroundGradient } from 'components/gradients/background-gradient';
   import { ButtonLink } from 'components/button-link/button-link';
+  import { FiDownload } from 'react-icons/fi';
   
   const DownloadPage = () => {
     const router = useRouter();
@@ -62,10 +63,10 @@ import {
         <NextSeo title="::Sonoplastia::" />
         {/* <BackgroundGradient height="100%" /> */}
         <Box zIndex="2" pos="relative">
-          <Heading mb={4} mt={8}>Faça o Download</Heading>
+          <Heading mb={4} mt={12}>Faça o Download</Heading>
           <Text mt={4}>Comece a usar os aplicativos.</Text>
   
-          <SimpleGrid columns={[1, null, 2]} spacing={12} mt={9} ml={28} mr={28}>
+          <SimpleGrid columns={[1, null, 2]} spacing={16} mt={9} ml={28} mr={28}>
             {plans.map((plan) => (
               <PricingBox
                 key={plan.id}
@@ -80,9 +81,16 @@ import {
                   ))}
                 </PricingFeatures>
                 <ButtonLink
-                  colorScheme="primary"
-                  href={plan.action.href}
+                //    as="a"
+                   colorScheme="primary"
+                //    display="inline-flex" 
+                //    alignItems="center"
+                //    width="fit" 
+                //    padding="8px 16px" 
+                   href={plan.action.href}
+                //    rel="noopener noreferrer" 
                 >
+                    <FiDownload style={{ marginRight: '8px' }} />
                   {plan.action.label || 'Download'}
                 </ButtonLink>
               </PricingBox>
@@ -98,7 +106,7 @@ import {
   };
   
   const PricingFeatures = ({ children }) => (
-    <VStack align="stretch" spacing={4} mb={8}>
+    <VStack align="stretch" spacing={2} mb={8}>
       {children}
     </VStack>
   );
