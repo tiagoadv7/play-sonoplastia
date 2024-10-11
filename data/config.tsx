@@ -13,12 +13,12 @@ const siteConfig = {
     openGraph: {
       type: 'website',
       locale: 'pt_BR',
-      url: 'https://play-sonoplastia.vercel.app/',
+      url: process.env.WEBSITE_URL,
       title: 'Player Sonoplastia',
       description: 'Para maior agilidade e organização',
       images: [
         {
-          url: 'hhttps://github.com/tiagoadv7/play-sonoplastia/blob/main/public/static/images/logo.png',
+          url: `${process.env.WEBSITE_URL}/images/seo/logo.png`,
           width: 1200,
           height: 630,
           alt: 'Player Sonoplastia - Agilidade e Organização',
