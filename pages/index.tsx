@@ -19,6 +19,7 @@ import {
   Flex,
 } from "@chakra-ui/react";
 import { SEO } from "components/seo/seo";
+import { FiDownload } from 'react-icons/fi';
 
 import { FallInPlace } from "components/motion/fall-in-place";
 import { Hero } from "components/hero";
@@ -54,7 +55,7 @@ import DownloadPage from './download';
 
 import faq from "data/faq";
 // import testimonials from "data/testimonials";
-import pricing from "data/pricing";
+// import pricing from "data/pricing";
 import download from "pages/download";
 
 import {
@@ -118,7 +119,27 @@ const HeroSection: React.FC = () => {
               </HStack>
 
               <ButtonGroup spacing={4} alignItems="center">
-                <ButtonLink colorScheme="primary" size="lg" href="/#download">
+                {/* <ButtonLink colorScheme="primary" size="lg" href="/#download">
+                <FiDownload style={{ marginRight: '8px' }} />
+                  Download
+                </ButtonLink> */}
+                <ButtonLink
+                  size="lg"
+                  href="/#download"
+                  variant="primary"
+                  rightIcon={
+                    <Icon
+                      as={FiDownload}
+                      sx={{
+                        marginRight: '8px',
+                        transition: 'transform 0.3s ease',
+                        '.chakra-button:hover &': {
+                          transform: 'translateY(3px)',
+                        },
+                      }}
+                    />
+                  }
+                >
                   Download
                 </ButtonLink>
                 <ButtonLink
@@ -461,7 +482,8 @@ const FeaturesSection = () => {
 
 const DownloadSection = () => {
   return (
-    <Box id="download">
+    
+    <Box  id="download">
       <DownloadPage {...download} />
     </Box>
   );

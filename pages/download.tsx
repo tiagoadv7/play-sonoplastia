@@ -20,7 +20,7 @@ import {
   
     const plans = [
       {
-        id: 'oss',
+        id: 'youtubeplayer',
         title: 'YouTube Player',
         description: 'Uma interface fácil de usar, basta colar a URL.',
         price: 'Grátis',
@@ -39,7 +39,7 @@ import {
         },
       },
       {
-        id: 'bootstrap',
+        id: 'playervideo',
         title: 'Player Video',
         description: 'Para facilitar a reprodução em duas telas.',
         price: 'Grátis',
@@ -54,6 +54,7 @@ import {
         action: {
           href: 'https://download944.mediafire.com/je5pcxjyta9gSblhFA4UIQ5kEsPCkbftomTM_YEQQjlIAOJNLM86P7waYT-zckkC8j5uFJNz7I1zNTJGLvtmhafd9b_ItixcpGGIJaHaa_xrLSqxAJeO92SwI5oa-jouVIs_an6y-4O_y0W_ur4WODlYrNX7SglY0mo7k5NjdWE9Lg/pvsdam6sxp60rkm/V%C3%ADdeo+Player+Setup+1.3.24.exe',
           label: 'Download',
+
         },
       },
     ];
@@ -81,18 +82,19 @@ import {
                   ))}
                 </PricingFeatures>
                 <ButtonLink
-                //    as="a"
-                   colorScheme="primary"
-                //    display="inline-flex" 
-                //    alignItems="center"
-                //    width="fit" 
-                //    padding="8px 16px" 
-                   href={plan.action.href}
-                //    rel="noopener noreferrer" 
-                >
-                    <FiDownload style={{ marginRight: '8px' }} />
-                  {plan.action.label || 'Download'}
-                </ButtonLink>
+                size="lg"
+                colorScheme="primary"
+                width="fit-content" // Ensures the button fits its content size
+                display="inline-flex" // Aligns content horizontally inside the button
+                alignItems="center" // Centers the icon and text vertically
+                padding="8px 8px" // Adjust padding for better spacing
+                href={plan.action.href}
+                rel="noopener noreferrer"
+              >
+                <FiDownload style={{ marginRight: '8px', transition: 'transform 0.3s ease' }} />
+                {plan.action.label || 'Download'}
+              </ButtonLink>
+
               </PricingBox>
             ))}
           </SimpleGrid>
