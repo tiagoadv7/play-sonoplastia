@@ -8,7 +8,10 @@ export interface SEOProps extends NextSeoProps {
 
 export const SEO = ({ title, description, image, ...props }: SEOProps) => {
   // Garantir que uma imagem padrão do OpenGraph seja usada se nenhuma for fornecida
-  const ogImage = image || siteConfig.seo.openGraph.images[0].url;
+  const ogImage =
+    image ||
+    siteConfig.seo?.openGraph?.images?.[0]?.url ||
+    'default-image-url'; // Replace 'default-image-url' with your actual default image URL
 
   return (
     <NextSeo
@@ -23,18 +26,19 @@ export const SEO = ({ title, description, image, ...props }: SEOProps) => {
             url: ogImage,
             width: 1200,
             height: 630,
-            alt: title || siteConfig.seo.openGraph.images[0].alt, // Usa o alt padrão se nenhum for passado
+            alt: title || siteConfig.seo.openGraph?.images?.[0]?.alt || 'Default image description', // Usa o alt padrão se nenhum for passado
           },
         ],
+        url: props.canonical, // Include canonical URL if provided
+      // }}
+      // twitter={{
+      //   cardType: 'summary_large_image',
+      //   site: siteConfig.seo?.twitter?.site || '@defaultTwitterHandle', // Adiciona o handle do Twitter se houver
+      //   title: title || (siteConfig.seo?.title as string),
+      //   description: description || siteConfig.seo.description,
+      //   images: [ogImage], // Imagem para Twitter Cards
       }}
-      twitter={{
-        cardType: 'summary_large_image',
-        site: siteConfig.seo.twitter?.site, // Adiciona o handle do Twitter se houver
-        title: title || siteConfig.seo.title,
-        description: description || siteConfig.seo.description,
-        images: [ogImage], // Imagem para Twitter Cards
-      }}
-      titleTemplate={siteConfig.seo.titleTemplate || '%s | ::Player::'}
+      titleTemplate={siteConfig.seo?.titleTemplate || '%s | ::Player::'}
       {...props} // Espalha as outras propriedades que podem ser passadas
     />
   );
