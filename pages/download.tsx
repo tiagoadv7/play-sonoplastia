@@ -34,7 +34,7 @@ import {
             iconColor: 'green.500', },
         ],
         action: {
-          href: 'https://download943.mediafire.com/vksyvz8iptlg62jYT3gNoUmmwWgpqLZFN0YGDMV3-F4hcoGmYFbEA1Q-hbLmQ7jh7ZMiiL2iwjaZo6IcRkMC83iiOhhGxW_7I7Fxin2Oa12oaPBfVUCX290scuPjymcV_UMT6JX6o3qb0u-Qtu4sk_5GzpnoCPJvTY0lcw0g6Ei0Xg/d3v8iy7tux95tlu/Youtube+Player-Setup-1.4.24.exe',
+          href: 'https://download943.mediafire.com/vo27ff5up4bgkz6CqoB5suH4aKklfN-e1x31ged_Hs6L-l-ywAA1Nt80EN8HgFElXs7MijM532mKHXar1S4h4nYQE8qHIAGhKLfFz5EMtLtT5S1JI__y_Viru3QfTavH6vilBQI1f9Wcwsu9gx4pEOpplCGOPu7ff8Lrw6w201_0Nw/mnc4o8lzkbjte4v/Youtube+Player-Setup-1.4.24.exe',
           label: 'Download',
         },
       },
@@ -52,7 +52,7 @@ import {
           { title: 'Baixe já...', iconColor: 'green.500' },
         ],
         action: {
-          href: 'https://download944.mediafire.com/je5pcxjyta9gSblhFA4UIQ5kEsPCkbftomTM_YEQQjlIAOJNLM86P7waYT-zckkC8j5uFJNz7I1zNTJGLvtmhafd9b_ItixcpGGIJaHaa_xrLSqxAJeO92SwI5oa-jouVIs_an6y-4O_y0W_ur4WODlYrNX7SglY0mo7k5NjdWE9Lg/pvsdam6sxp60rkm/V%C3%ADdeo+Player+Setup+1.3.24.exe',
+          href: 'https://download944.mediafire.com/pk3zarxt1w2gqJH-biRcPT927aKn3SMFnUiZQOULEMd4q1VamjBWXPWa3zeIKis74_6mrLHBkjYbMSeyMZY5RpEGvNLKAWkjeJ8OLOPMwfOTcXDE5C25Ld0nNdpjI-tvn3KYentOjJjKXg0vwrmM_7PhHCNiD-a37EcRIyqAhtngNA/lsg1kh28viboal5/V%C3%ADdeo+Player+Setup+1.3.24.exe',
           label: 'Download',
 
         },
