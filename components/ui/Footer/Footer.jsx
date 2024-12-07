@@ -19,12 +19,7 @@ const Footer = () => {
   . Todos os direitos reservados.
 </p>
 <div className="flex items-center justify-center gap-x-6 text-gray-500 mt-6 sm:mt-0">
-    <a
-        href="https://github.com/tiagoadv7/player-sonoplastia"
-        target="_blank"
-        rel="noreferrer"
-        aria-label="social media"
-    >
+<a href="https://github.com/tiagoadv7/player-sonoplastia" target="_blank" rel="noreferrer" aria-label="social media">
         <svg
             stroke="currentColor"
             fill="currentColor"
