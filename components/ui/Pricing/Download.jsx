@@ -35,7 +35,7 @@ const Download = () => {
         "Baixe já...",
       ],
       action: {
-        href: "https://download944.mediafire.com/pk3zarxt1w2gqJH-biRcPT927aKn3SMFnUiZQOULEMd4q1VamjBWXPWa3zeIKis74_6mrLHBkjYbMSeyMZY5RpEGvNLKAWkjeJ8OLOPMwfOTcXDE5C25Ld0nNdpjI-tvn3KYentOjJjKXg0vwrmM_7PhHCNiD-a37EcRIyqAhtngNA/lsg1kh28viboal5/V%C3%ADdeo+Player+Setup+1.3.24.exe",
+        href: "https://www.dropbox.com/scl/fi/wrfxh26mrtnppvg5nsd3o/V-deo-Player-Setup-24.4.1.exe?rlkey=yyd970hrp5x5rag95w2sv9szb&st=rxqugkgh&dl=0",
         label: "Download",
       },
     },
