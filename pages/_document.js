@@ -19,7 +19,7 @@ export default function Document() {
         
        
         <meta property="og:title" content="=::Player Sonoplastia::=" />
-        <meta property="og:description" content="Descrição do site para redes sociais." />
+        <meta property="og:description" content="Site para facilitar a sonoplastia." />
         <meta property="og:image" content="https://github.com/tiagoadv7/play-sonoplastia/blob/main/public/static/logo/logo.webp" />
         <meta property="og:url" content="https://player-sonoplastia.vercel.app" />
         <meta property="og:type" content="website" />
