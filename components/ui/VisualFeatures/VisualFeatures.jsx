@@ -8,7 +8,7 @@ const VisualFeatures = () => {
     const features = [
         {
             title: "Player Video",
-            desc: "Lista de videos em fila para reprodução, efeito de fade ao pausar e reproduzir, função repetir e atenuar volume. Reprodução em segunda tela.",
+            desc: "Lista de videos em fila de 8 arquivos para reprodução, efeito de fade ao pausar e reproduzir, função repetir e atenuar volume. Reprodução em segunda tela.",
             img: Feature1
         },
         {
