@@ -20,8 +20,8 @@ export default function Document() {
        
         <meta property="og:title" content="=::Player Sonoplastia::=" />
         <meta property="og:description" content="Descrição do site para redes sociais." />
-        <meta property="og:image" content="/path/to/social-image.jpg" />
-        <meta property="og:url" content="https://mailgo-rho.vercel.app/" />
+        <meta property="og:image" content="https://github.com/tiagoadv7/play-sonoplastia/blob/main/public/static/logo/logo.webp" />
+        <meta property="og:url" content="https://player-sonoplastia.vercel.app" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Card */}
