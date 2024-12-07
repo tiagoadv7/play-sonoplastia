@@ -9,7 +9,7 @@ export default function Document() {
         <meta charSet="UTF-8" />
         <meta name="description" content="Sonoplastia IASD" />
         <meta name="keywords" content="Sonoplastia IASD, Player Sonoplastia, para, facilitar no seu dia a dia" />
-        <meta name="author" content="Seu Nome" />
+        <meta name="author" content="Tiago Lima" />
 
         
         <title>=::Player Sonoplastia::=</title>
