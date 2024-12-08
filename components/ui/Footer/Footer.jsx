@@ -22,7 +22,7 @@ const Footer = () => {
                     <div className="flex items-center justify-center gap-x-6 text-gray-500 mt-6 sm:mt-0">
                        
                         <Link
-                            href="https://api.whatsapp.com/send?phone=55988747793"
+                            href="https://wa.me/5548988747793"
                             className="text-gray-200 hover:text-blue-300 duration-150 "
                             target="_blank"
                             rel="noopener noreferrer"
