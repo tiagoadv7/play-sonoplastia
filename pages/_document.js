@@ -32,12 +32,6 @@ export default function Document() {
         />
         <meta property="og:url" content="https://player-sonoplastia.vercel.app" />
         <meta property="og:type" content="website" />
-
-        {/* Twitter Card */}
-        {/* <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Mailgo - Template" />
-        <meta name="twitter:description" content="Descrição do site no Twitter." />
-        <meta name="twitter:image" content="/path/to/twitter-image.jpg" /> */}
         <Main />
         <NextScript />
       </body>
