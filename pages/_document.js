@@ -16,7 +16,7 @@ export default function Document() {
         />
         <meta name="author" content="Tiago Lima" />
         <title>=::Player Sonoplastia::=</title>
-        <link rel="icon" href="/favicon.svg" />
+        <link rel="icon" href="/favicon.ico" />
 
         {/* Open Graph */}
         <meta property="og:title" content="=::Player Sonoplastia::=" />
