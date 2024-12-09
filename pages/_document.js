@@ -8,7 +8,7 @@ export default function Document() {
         <meta charSet="UTF-8" />
         <meta
           name="description"
-          content="Player Sonoplastia IASD - Simplifique sua rotina de sonoplastia com nossa plataforma eficiente e acessível."
+          content="Player Sonoplastia IASD - Simplifique sua rotina de sonoplastia."
         />
         <meta
           name="keywords"
@@ -26,9 +26,9 @@ export default function Document() {
         />
         <meta
           property="og:image"
-          content="https://github.com/tiagoadv7/play-sonoplastia/blob/main/public/static/images/seo/logo.png"
+          content="https://github.com/tiagoadv7/play-sonoplastia/blob/main/public/static/logo/logo1.png"
         />
-        <meta property="og:url" content="https://player-sonoplastia.vercel.app" />
+        <meta property="og:url" content="https://github.com/tiagoadv7/play-sonoplastia/blob/main/public/static/logo/logo1.png" />
         <meta property="og:type" content="website" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
