@@ -22,7 +22,7 @@ export default function Document() {
         <meta property="og:title" content="=::Player Sonoplastia::=" />
         <meta
           property="og:description"
-          content="Simplifique sua rotina de sonoplastia com nossa plataforma eficiente e acessível."
+          content="Simplifique sua rotina de sonoplastia com os aplicativos!."
         />
         <meta
           property="og:image"
