@@ -17,7 +17,7 @@ const Download = () => {
         "Baixe já...",
       ],
       action: {
-        href: "https://download943.mediafire.com/vo27ff5up4bgkz6CqoB5suH4aKklfN-e1x31ged_Hs6L-l-ywAA1Nt80EN8HgFElXs7MijM532mKHXar1S4h4nYQE8qHIAGhKLfFz5EMtLtT5S1JI__y_Viru3QfTavH6vilBQI1f9Wcwsu9gx4pEOpplCGOPu7ff8Lrw6w201_0Nw/mnc4o8lzkbjte4v/Youtube+Player-Setup-1.4.24.exe",
+        href: "https://download943.mediafire.com/vo27ff5up4bgkz6CqoB5suH4aKklfN-e1x31ged_Hs6L-l-ywAA1Nt80EN8HgFElXs7MijM532mKHXar1S4h4nYQE8qHIAGhKLfFz5EMtLtT5S1JI__y_Viru3QfTavH6vilBQI1f9Wcwsu9gx4pEOpplCGOPu7ff8Lrw6w201_0Nw/mnc4o8lzkbjte4v/Youtube+Player-Setup-1.4.24.exe?dl=1",
         label: "Download",
       },
     },
