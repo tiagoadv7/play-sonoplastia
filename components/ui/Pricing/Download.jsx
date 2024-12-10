@@ -32,22 +32,48 @@ const Download = () => {
     },
   ];
 
-  const handleDownload = (href) => {
-    // Exibe a mensagem de download iniciado
+  const handleDownload = async (url, filename) => {
     setDownloadMessage("Download iniciado...");
-    // Cria um link de download "invisível"
-    const link = document.createElement("a");
-    link.href = href;
-    link.download = true;
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
 
-    // Simula o tempo de download para exibir a mensagem "Download concluído"
-    setTimeout(() => {
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error("Erro no download.");
+      }
+
+      const total = response.headers.get("content-length");
+      const reader = response.body.getReader();
+      const chunks = [];
+      let received = 0;
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        chunks.push(value);
+        received += value.length;
+
+        if (total) {
+          const percent = ((received / total) * 100).toFixed(2);
+          setDownloadMessage(`Baixando... ${percent}%`);
+        }
+      }
+
+      const blob = new Blob(chunks);
+      const blobUrl = window.URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = blobUrl;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      window.URL.revokeObjectURL(blobUrl);
+
       setDownloadMessage("Download concluído!");
-      setTimeout(() => setDownloadMessage(""), 3000); // Remove a mensagem após 3 segundos
-    }, 2000);
+      setTimeout(() => setDownloadMessage(""), 3000);
+    } catch (error) {
+      setDownloadMessage("Erro ao realizar o download.");
+      setTimeout(() => setDownloadMessage(""), 3000);
+    }
   };
 
   return (
@@ -82,7 +108,9 @@ const Download = () => {
                 ))}
               </PricingFeatures>
               <button
-                onClick={() => handleDownload(plan.action.href)}
+                onClick={() =>
+                  handleDownload(plan.action.href, `${plan.title}.exe`)
+                }
                 className="inline-flex items-center justify-center px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-500 focus:outline-none mt-6 transform transition-transform duration-300 hover:translate-y-1"
               >
                 <svg
