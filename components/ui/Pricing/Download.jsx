@@ -41,25 +41,9 @@ const Download = () => {
         throw new Error("Erro no download.");
       }
 
-      const total = response.headers.get("content-length");
-      const reader = response.body.getReader();
-      const chunks = [];
-      let received = 0;
-
-      while (true) {
-        const { done, value } = await reader.read();
-        if (done) break;
-        chunks.push(value);
-        received += value.length;
-
-        if (total) {
-          const percent = ((received / total) * 100).toFixed(2);
-          setDownloadMessage(`Baixando... ${percent}%`);
-        }
-      }
-
-      const blob = new Blob(chunks);
+      const blob = await response.blob();
       const blobUrl = window.URL.createObjectURL(blob);
+
       const a = document.createElement("a");
       a.href = blobUrl;
       a.download = filename;
@@ -69,9 +53,11 @@ const Download = () => {
       window.URL.revokeObjectURL(blobUrl);
 
       setDownloadMessage("Download concluído!");
-      setTimeout(() => setDownloadMessage(""), 3000);
     } catch (error) {
-      setDownloadMessage("Erro ao realizar o download.");
+      console.error("Erro no download com Fetch:", error);
+      setDownloadMessage("Redirecionando para download...");
+      window.location.href = url; // Fallback para redirecionamento
+    } finally {
       setTimeout(() => setDownloadMessage(""), 3000);
     }
   };
