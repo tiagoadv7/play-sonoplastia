@@ -26,9 +26,9 @@ export default function Document() {
         />
         <meta
           property="og:image"
-          content="https://github.com/tiagoadv7/play-sonoplastia/blob/main/public/static/logo/logo1.png"
+          content="https://player-sonoplastia.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fuser.86446550.webp&w=3840&q=75"
         />
-        <meta property="og:url" content="https://github.com/tiagoadv7/play-sonoplastia/blob/main/public/static/logo/logo1.png" />
+        <meta property="og:url" content="https://player-sonoplastia.vercel.app" />
         <meta property="og:type" content="website" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
