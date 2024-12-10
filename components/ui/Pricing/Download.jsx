@@ -1,7 +1,10 @@
+import React, { useState } from "react";
 import LayoutEffect from "@/components/LayoutEffect";
 import SectionWrapper from "@/components/SectionWrapper";
 
 const Download = () => {
+  const [downloadMessage, setDownloadMessage] = useState("");
+
   const plans = [
     {
       id: "youtubeplayer",
@@ -9,13 +12,7 @@ const Download = () => {
       description: "Uma interface fácil de usar, basta colar a URL.",
       price: "Grátis",
       isRecommended: true,
-      features: [
-        "Rápido",
-        "Fácil",
-        "Prático",
-        "Leve",
-        "Baixe já...",
-      ],
+      features: ["Rápido", "Fácil", "Prático", "Leve", "Baixe já..."],
       action: {
         href: "https://www.dropbox.com/scl/fi/rgvr5sv73x2vhzmvcxipr/Youtube-Player-Setup-1.4.24.exe?rlkey=o5iy4onqfya3c82aumh4it245&st=j6r6j4lm&dl=1",
         label: "Download",
@@ -27,13 +24,7 @@ const Download = () => {
       description: "Para facilitar a reprodução em duas telas.",
       price: "Grátis",
       isRecommended: true,
-      features: [
-        "Rápido",
-        "Fácil",
-        "Prático",
-        "Leve",
-        "Baixe já...",
-      ],
+      features: ["Rápido", "Fácil", "Prático", "Leve", "Baixe já..."],
       action: {
         href: "https://www.dropbox.com/scl/fi/wrfxh26mrtnppvg5nsd3o/V-deo-Player-Setup-24.4.1.exe?rlkey=yyd970hrp5x5rag95w2sv9szb&st=rxqugkgh&dl=1",
         label: "Download",
@@ -41,11 +32,33 @@ const Download = () => {
     },
   ];
 
+  const handleDownload = (href) => {
+    // Exibe a mensagem de download iniciado
+    setDownloadMessage("Download iniciado...");
+    // Cria um link de download "invisível"
+    const link = document.createElement("a");
+    link.href = href;
+    link.download = true;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+
+    // Simula o tempo de download para exibir a mensagem "Download concluído"
+    setTimeout(() => {
+      setDownloadMessage("Download concluído!");
+      setTimeout(() => setDownloadMessage(""), 3000); // Remove a mensagem após 3 segundos
+    }, 2000);
+  };
+
   return (
     <SectionWrapper id="download" className="custom-screen">
-      <div className="relative max-w-xl mx-auto text-center ">
-        <h2 className="text-gray-50 text-3xl font-semibold sm:text-4xl pt-6">Faça o Download</h2>
-        <h4 className="text-gray-50 text-2xl font-semibold sm:text-2xl">Comece a usar os aplicativos.</h4>
+      <div className="relative max-w-xl mx-auto text-center">
+        <h2 className="text-gray-50 text-3xl font-semibold sm:text-4xl pt-6">
+          Faça o Download
+        </h2>
+        <h4 className="text-gray-50 text-2xl font-semibold sm:text-2xl">
+          Comece a usar os aplicativos.
+        </h4>
       </div>
       <LayoutEffect
         className="duration-1000 delay-300"
@@ -68,11 +81,8 @@ const Download = () => {
                   <PricingFeature key={idx} title={feature} />
                 ))}
               </PricingFeatures>
-              <a
-                href={plan.action.href}
-                download
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => handleDownload(plan.action.href)}
                 className="inline-flex items-center justify-center px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-500 focus:outline-none mt-6 transform transition-transform duration-300 hover:translate-y-1"
               >
                 <svg
@@ -90,11 +100,16 @@ const Download = () => {
                   />
                 </svg>
                 {plan.action.label}
-              </a>
+              </button>
             </PricingBox>
           ))}
         </div>
       </LayoutEffect>
+      {downloadMessage && (
+        <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white px-4 py-2 rounded shadow-lg">
+          {downloadMessage}
+        </div>
+      )}
     </SectionWrapper>
   );
 };
