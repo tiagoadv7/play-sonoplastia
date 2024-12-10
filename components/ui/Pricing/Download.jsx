@@ -35,7 +35,7 @@ const Download = () => {
         "Baixe já...",
       ],
       action: {
-        href: "https://www.dropbox.com/scl/fi/wrfxh26mrtnppvg5nsd3o/V-deo-Player-Setup-24.4.1.exe?rlkey=yyd970hrp5x5rag95w2sv9szb&st=rxqugkgh&dl=0",
+        href: "https://www.dropbox.com/scl/fi/wrfxh26mrtnppvg5nsd3o/V-deo-Player-Setup-24.4.1.exe?rlkey=yyd970hrp5x5rag95w2sv9szb&st=rxqugkgh&dl=1",
         label: "Download",
       },
     },
