@@ -8,7 +8,7 @@ export default function Document() {
         <meta charSet="UTF-8" />
         <meta
           name="description"
-          content="Player Sonoplastia IASD - Simplifique sua rotina de sonoplastia com nossa plataforma eficiente e acessível."
+          content="Player Sonoplastia IASD - Simplifique sua rotina de sonoplastia."
         />
         <meta
           name="keywords"
@@ -16,17 +16,17 @@ export default function Document() {
         />
         <meta name="author" content="Tiago Lima" />
         <title>=::Player Sonoplastia::=</title>
-        <link rel="icon" href="/favicon.svg" />
+        <link rel="icon" href="/favicon.ico" />
 
         {/* Open Graph */}
         <meta property="og:title" content="=::Player Sonoplastia::=" />
         <meta
           property="og:description"
-          content="Simplifique sua rotina de sonoplastia com nossa plataforma eficiente e acessível."
+          content="Simplifique sua rotina de sonoplastia com os aplicativos!."
         />
         <meta
           property="og:image"
-          content="https://github.com/tiagoadv7/play-sonoplastia/blob/main/public/static/images/seo/logo.png"
+          content="https://player-sonoplastia.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fuser.86446550.webp&w=3840&q=75"
         />
         <meta property="og:url" content="https://player-sonoplastia.vercel.app" />
         <meta property="og:type" content="website" />
