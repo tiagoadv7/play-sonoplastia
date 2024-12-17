@@ -42,7 +42,7 @@ const Features = () => {
             icon:
             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" focusable="false" class="chakra-icon css-s48i3l" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>,
             title: "Video Player",
-            desc: "Versão 24.4.1."
+            desc: "Versão 24.4.1"
         },
     ]
 
