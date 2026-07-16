@@ -100,7 +100,8 @@ const HeroSection: React.FC = () => {
             px="0"
             title={
               <FallInPlace>
-                Aplicativos para facilitar
+                Aplicativos para <br/>
+                facilitar
                 a organização <br/>
                 e praticidade
                 da Sonoplastia!
