@@ -86,7 +86,7 @@ import {
           <Heading mb={4} mt={12}>Faça o Download</Heading>
           <Text mt={4}>Comece a usar os aplicativos.</Text>
   
-          <SimpleGrid columns={[1, null, 3]} spacing={16} mt={9} ml={28} mr={28}>
+          <SimpleGrid columns={[1, null, 3]} spacing={10} mt={9} ml={28} mr={28}>
             {plans.map((plan) => (
               <PricingBox
                 key={plan.id}
