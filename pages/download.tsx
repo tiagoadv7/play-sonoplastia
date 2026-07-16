@@ -57,6 +57,25 @@ import {
 
         },
       },
+      {
+        id: 'louvorja',
+        title: 'Louvor JA',
+        description: 'Para facilitar a reprodução em duas telas.',
+        price: 'Grátis',
+        isRecommended: true,
+        features: [
+          { title: 'Rápido' },
+          { title: 'Fácil' },
+          { title: 'Prático' },
+          { title: 'Leve' },
+          { title: 'Baixe já...', iconColor: 'green.500' },
+        ],
+        action: {
+          href: 'https://www.dropbox.com/scl/fi/16fbpynbyqpymknhn0pqz/Louvor-JA-Setup-1.28.0.exe?rlkey=0dkux1wt6rnrjh11fjk08q91g&st=a4n12y3y&dl=1',
+          label: 'Download',
+
+        },
+      },
     ];
   
     return (
