@@ -60,7 +60,7 @@ import {
       {
         id: 'louvorja',
         title: 'Louvor JA',
-        description: 'Para facilitar a reprodução em duas telas.',
+        description: 'Para organização da programação e facilitar a reprodução em duas telas.',
         price: 'Grátis',
         isRecommended: true,
         features: [
@@ -71,7 +71,7 @@ import {
           { title: 'Baixe já...', iconColor: 'green.500' },
         ],
         action: {
-          href: 'https://www.dropbox.com/scl/fi/16fbpynbyqpymknhn0pqz/Louvor-JA-Setup-1.28.0.exe?rlkey=0dkux1wt6rnrjh11fjk08q91g&st=a4n12y3y&dl=1',
+          href: 'https://www.dropbox.com/scl/fi/qgnfygjtlff9bo5gyq47r/Louvor-JA-Setup-1.28.0.exe?rlkey=x78ur7gqntdft49rt3xb8mc8w&st=vn55x44p&dl=1',
           label: 'Download',
 
         },
