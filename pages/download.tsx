@@ -71,7 +71,7 @@ import {
           { title: 'Baixe já...', iconColor: 'green.500' },
         ],
         action: {
-          href: 'https://www.dropbox.com/scl/fi/qgnfygjtlff9bo5gyq47r/Louvor-JA-Setup-1.28.0.exe?rlkey=x78ur7gqntdft49rt3xb8mc8w&st=vn55x44p&dl=1',
+          href: 'https://github.com/tiagoadv7/louvorja/releases/download/v1.28.1/Louvor-JA-Setup-1.28.1.exe',
           label: 'Download',
 
         },
