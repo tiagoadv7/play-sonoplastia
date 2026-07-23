@@ -71,7 +71,7 @@ import {
           { title: 'Baixe já...', iconColor: 'green.500' },
         ],
         action: {
-          href: 'https://github.com/tiagoadv7/louvorja/releases/download/v1.27.1/Louvor-JA-Setup-1.27.1.exe',
+          href: 'https://github.com/tiagoadv7/louvorja/releases/download/v1.28.5/Louvor-JA-Setup-1.28.5.exe',
           label: 'Download',
 
         },
